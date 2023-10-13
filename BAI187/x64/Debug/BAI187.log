@@ -1,4 +1,0 @@
-﻿  BAI187.cpp
-C:\Users\phuon\OneDrive\Desktop\Ptay\UIT_235221408_BT2\BAI187\BAI187.cpp(54,17): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-C:\Users\phuon\OneDrive\Desktop\Ptay\UIT_235221408_BT2\BAI187\BAI187.cpp(70,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  BAI187.vcxproj -> C:\Users\phuon\OneDrive\Desktop\Ptay\UIT_235221408_BT2\x64\Debug\BAI187.exe
