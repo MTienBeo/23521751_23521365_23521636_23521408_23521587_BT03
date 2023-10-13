@@ -1,0 +1,4 @@
+﻿  bai001.cpp
+C:\Users\tgdvu\OneDrive\Documents\Visual Studio 2022\mảng 1 chiều\1\1\bai001.cpp(20,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\tgdvu\OneDrive\Documents\Visual Studio 2022\mảng 1 chiều\1\1\bai001.cpp(22,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  1.vcxproj -> C:\Users\tgdvu\OneDrive\Documents\Visual Studio 2022\mảng 1 chiều\1\x64\Debug\1.exe
