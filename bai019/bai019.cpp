@@ -1,51 +1,56 @@
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
+
 using namespace std;
 
-void Nhap(int[], int&);
-void Xuat(int[], int);
-float NhoNhat(float[], int);
+void Nhap(float[], int&);
+void Xuat(float[], int);
 void LietKe(float[], int);
+float Min(float[], int);
 
 int main()
 {
-	int b[500];
+	float b[500];
 	int k;
+
 	Nhap(b, k);
-	cout << "Mang ban dau: ";
+	cout << "\nMang ban dau: ";
 	Xuat(b, k);
-	Lietke(b, k);
+	cout << "\nVi tri gia tri lon nhat trong mang: ";
+	LietKe(b, k);
+
 	return 0;
 }
 
-void Nhap(int a[], int& n)
+void Nhap(float a[], int& n)
 {
-	cout << "Nhap n:";
+	cout << "Nhap so phan tu cua mang: ";
 	cin >> n;
 	srand(time(NULL));
 	for (int i = 0; i < n; i++)
-		a[i] = rand() % (200 + 1) - 100;
+		a[i] = -100.0 + (rand() / (RAND_MAX / (100.0 - (-100.0))));
 }
 
-void Xuat(int a[], int n)
+void Xuat(float a[], int n)
 {
 	for (int i = 0; i < n; i++)
-		cout << setw(8) << a[i];
-}
-
-float NhoNhat(float[], int)
-{
-	float lc = a[0];
-	for (int i = 0; i < n; i++)
-		if (a[i] < lc)
-			lc = a[i];
-	return lc;
+		cout << setw(10) << setprecision(5) << a[i];
 }
 
 void LietKe(float a[], int n)
 {
-	float lc = NhoNhat(a, n);
+	float lc = Min(a, n);
 	for (int i = 0; i < n; i++)
 		if (a[i] == lc)
-			cout << i;
+			cout << setw(5) << i;
+}
+
+float Min(float a[], int n)
+{
+	float lc = a[0];
+	for (int i = 1; i < n; i++)
+		if (a[i] < lc)
+			lc = a[i];
+	return lc;
 }

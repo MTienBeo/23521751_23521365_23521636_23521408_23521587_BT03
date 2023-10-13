@@ -1,52 +1,58 @@
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
+#include <cmath>
+
 using namespace std;
 
 void Nhap(int[], int&);
 void Xuat(int[], int);
-int ChuSoDau(int n);
-void Lietke(int[], int);
+void LietKe(int[], int);
+bool KTChan(int);
 
 int main()
 {
-	int k;
 	int b[500];
+	int k;
+
 	Nhap(b, k);
-	cout << "Mang ban dau: ";
+	cout << "\nMang ban dau: ";
 	Xuat(b, k);
-	cout << endl;
-	cout << "liet ke: ";
-	Lietke(b, k);
+	cout << "\nMang cac so co chu so dau la chan: ";
+	LietKe(b, k);
+
 	return 0;
 }
 
 void Nhap(int a[], int& n)
 {
-	cout << "Nhap n: ";
+	cout << "Nhap so phan tu cua mang: ";
 	cin >> n;
 	srand(time(NULL));
-	for (int i = 0; i <= n - 1; i++)
-		a[i] = -100.0 + (rand() / (RAND_MAX / (200.0)));
+	for (int i = 0; i < n; i++)
+		a[i] = rand() % (200 + 1) - 100;
 }
 
 void Xuat(int a[], int n)
 {
-	cout << n << endl;
-	for (int i = 0; i <= n - 1; i++)
-		cout << setw(10) << setprecision(5) << a[i];
+	for (int i = 0; i < n; i++)
+		cout << setw(10) << a[i];
 }
 
-int ChuSoDau(int n)
+void LietKe(int a[], int n)
 {
-	int dt = abs(n);
-	while (dt >= 10)
-		dt = dt / 10;
-	return dt;
+	for (int i = 0; i < n; i++)
+		if (KTChan(a[i]))
+			cout << setw(10) << a[i];
 }
 
-void Lietke(int a[], int n)
+bool KTChan(int n)
 {
-	for (int i = 0; i <= n - 1; i++)
-		if (ChuSoDau(a[i]) % 2 == 0)
-			cout << a[i] << " ";
+	int t = abs(n);
+	while (t >= 10)
+		t = t / 10;
+	if (t % 2 == 0)
+		return true;
+	else
+		return false;
 }

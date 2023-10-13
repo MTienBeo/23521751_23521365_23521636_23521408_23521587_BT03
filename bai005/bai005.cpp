@@ -1,25 +1,30 @@
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
+
 using namespace std;
 
 void Nhap(int[], int&);
 void Xuat(int[], int);
-void Lietke(int[], int);
+void LietKe(int[], int);
 
 int main()
 {
 	int b[500];
 	int k;
+
 	Nhap(b, k);
-	cout << "Mang ban dau: ";
+	cout << "\nMang ban dau : ";
 	Xuat(b, k);
-	Lietke(b, k);
+	cout << "\nMang cac so chan: ";
+	LietKe(b, k);
+
 	return 0;
 }
 
 void Nhap(int a[], int& n)
 {
-	cout << "Nhap n:";
+	cout << "Nhap so phan tu cua mang: ";
 	cin >> n;
 	srand(time(NULL));
 	for (int i = 0; i < n; i++)
@@ -32,10 +37,9 @@ void Xuat(int a[], int n)
 		cout << setw(8) << a[i];
 }
 
-void Lietke(int a[], int n)
+void LietKe(int a[], int n)
 {
-	cout << "\n Cac so chan co trong mang"
-		for (int i = 0; i < n; i++)
-			if (a[i] % 2 == 0)
-				cout << setw(8) << a[i];
+	for (int i = 0; i < n; i++)
+		if (a[i] % 2 == 0)
+			cout << setw(8) << a[i];
 }
