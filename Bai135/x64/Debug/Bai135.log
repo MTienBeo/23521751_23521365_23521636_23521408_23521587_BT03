@@ -1,0 +1,7 @@
+﻿  Bai135.cpp
+D:\Bài tập\Mảng\UIT_23521636\Bai135\Bai135.cpp(19,2): error C2664: 'void Xuat2(int [],int)': cannot convert argument 1 from 'float [100]' to 'int []'
+D:\Bài tập\Mảng\UIT_23521636\Bai135\Bai135.cpp(19,8): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+D:\Bài tập\Mảng\UIT_23521636\Bai135\Bai135.cpp(7,6): message : see declaration of 'Xuat2'
+D:\Bài tập\Mảng\UIT_23521636\Bai135\Bai135.cpp(19,2): message : while trying to match the argument list '(float [100], int)'
+D:\Bài tập\Mảng\UIT_23521636\Bai135\Bai135.cpp(25,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Bài tập\Mảng\UIT_23521636\Bai135\Bai135.cpp(28,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
