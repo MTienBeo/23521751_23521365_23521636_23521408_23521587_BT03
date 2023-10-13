@@ -1,0 +1,4 @@
+﻿  Bai094.cpp
+D:\CODE UIT\Mang_23521587\Bai094\Bai094.cpp(27,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\CODE UIT\Mang_23521587\Bai094\Bai094.cpp(55): warning C4715: 'NguyenToCuoi': not all control paths return a value
+  Bai094.vcxproj -> D:\CODE UIT\Mang_23521587\x64\Debug\Bai094.exe
