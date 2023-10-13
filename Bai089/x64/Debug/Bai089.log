@@ -1,0 +1,4 @@
+﻿  Bai089.cpp
+F:\NMLT\UIT_23521751_23521555\Mang1chieu\Bai089\Bai089.cpp(17,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+F:\NMLT\UIT_23521751_23521555\Mang1chieu\Bai089\Bai089.cpp(56,13): warning C4551: function call missing argument list
+  Bai089.vcxproj -> F:\NMLT\UIT_23521751_23521555\Mang1chieu\x64\Debug\Bai089.exe
