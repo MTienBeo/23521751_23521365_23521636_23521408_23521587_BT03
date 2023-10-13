@@ -1,0 +1,5 @@
+﻿  BAI188.cpp
+C:\Users\phuon\OneDrive\Desktop\Ptay\UIT_235221408_BT2\BAI188\BAI188.cpp(46,17): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\phuon\OneDrive\Desktop\Ptay\UIT_235221408_BT2\BAI188\BAI188.cpp(53,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\phuon\OneDrive\Desktop\Ptay\UIT_235221408_BT2\BAI188\BAI188.cpp(60,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  BAI188.vcxproj -> C:\Users\phuon\OneDrive\Desktop\Ptay\UIT_235221408_BT2\x64\Debug\BAI188.exe
