@@ -1,0 +1,3 @@
+﻿  Bai093.cpp
+F:\NMLT\Mang\Mang1chieu\Bai093\Bai093.cpp(17,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  Bai093.vcxproj -> F:\NMLT\Mang\Mang1chieu\x64\Debug\Bai093.exe
